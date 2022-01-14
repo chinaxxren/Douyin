@@ -1,13 +1,45 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
 
-target 'DouyinSwift' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+platform :ios, '10.0'
+use_frameworks!
+
+target 'DouYin' do
   use_frameworks!
 
-  # Pods for DouyinSwift
+  # Architecture
+  pod 'ReactorKit'
+
+  # Network
+  pod 'ReachabilitySwift'
+  pod 'Moya/RxSwift'
+  
+  # Rx
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Moya/RxSwift', '~> 13.0'
+  pod 'RxOptional'
+  pod 'RxKeyboard'
+  pod 'RxGesture'
+  #pod 'SectionReactor'
+  pod 'RxIGListKit','2.0.2'
+  pod 'RxAnimated'
+  pod 'RxFSPagerView'
+
+  # UI
+  pod 'VVFrame'
+  pod 'VVAdapter'
   pod 'lottie-ios'
+  pod 'Nuke'
+  pod 'Kingfisher'
+
+  # Logging
+  
+  # Misc.
+  pod 'Then'
+  pod 'ReusableKit'
+  pod 'SwiftyColor'
+  pod 'SwiftyImage'
+  pod 'KeychainAccess'
+  pod 'Immutable'
+
+  # SDK
+
 end

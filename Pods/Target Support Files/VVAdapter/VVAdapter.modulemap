@@ -1,0 +1,6 @@
+framework module VVAdapter {
+  umbrella header "VVAdapter-umbrella.h"
+
+  export *
+  module * { export * }
+}

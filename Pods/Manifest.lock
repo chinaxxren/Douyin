@@ -1,41 +1,142 @@
 PODS:
-  - Alamofire (4.8.2)
-  - lottie-ios (3.1.0)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
+  - Alamofire (5.5.0)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - Immutable (0.6.0)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (6.3.1)
+  - lottie-ios (3.2.3)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
     - Moya/Core
-    - RxSwift (~> 4.0)
-  - Result (4.1.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxSwift (4.5.0)
+    - RxSwift (~> 6.0)
+  - Nuke (8.4.1)
+  - ReachabilitySwift (5.0.0)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - ReusableKit (3.0.0):
+    - ReusableKit/Core (= 3.0.0)
+  - ReusableKit/Core (3.0.0)
+  - RxAnimated (0.9.0):
+    - RxAnimated/Core (= 0.9.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxAnimated/Core (0.9.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxFSPagerView (0.2.1):
+    - RxCocoa
+  - RxGesture (4.0.3):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxIGListKit (2.0.2):
+    - IGListKit (~> 4.0.0)
+    - RxCocoa (~> 6.0)
+  - RxKeyboard (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SwiftyColor (1.2.1)
+  - SwiftyImage (1.6.0)
+  - Then (2.7.0)
+  - VVAdapter (0.0.3)
+  - VVFrame (0.0.2)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
+  - Immutable
+  - KeychainAccess
+  - Kingfisher
   - lottie-ios
-  - Moya/RxSwift (~> 13.0)
+  - Moya/RxSwift
+  - Nuke
+  - ReachabilitySwift
+  - ReactorKit
+  - ReusableKit
+  - RxAnimated
   - RxCocoa
+  - RxFSPagerView
+  - RxGesture
+  - RxIGListKit (= 2.0.2)
+  - RxKeyboard
+  - RxOptional
   - RxSwift
+  - SwiftyColor
+  - SwiftyImage
+  - Then
+  - VVAdapter
+  - VVFrame
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
+    - IGListDiffKit
+    - IGListKit
+    - Immutable
+    - KeychainAccess
+    - Kingfisher
     - lottie-ios
     - Moya
-    - Result
+    - Nuke
+    - ReachabilitySwift
+    - ReactorKit
+    - ReusableKit
+    - RxAnimated
     - RxCocoa
-  trunk:
+    - RxFSPagerView
+    - RxGesture
+    - RxIGListKit
+    - RxKeyboard
+    - RxOptional
+    - RxRelay
     - RxSwift
+    - SwiftyColor
+    - SwiftyImage
+    - Then
+    - VVAdapter
+    - VVFrame
+    - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  Immutable: 793dcfd5979883638401c468dfeb08651436f44f
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  RxAnimated: e53fb66cafc0539faf881b734f7412a624527f0a
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxFSPagerView: 2df5953d7e4c118ede349ccebb6f2d1930d325d2
+  RxGesture: abadd243fc36db74df43dfc893829ddde94f1a3d
+  RxIGListKit: 15a701dfdec1d625ce3c0bb412d5d1dcdb528b18
+  RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SwiftyColor: a2f468071c1b96be1ba41a0be7cf70d645cd7dcc
+  SwiftyImage: 65c71a147f417fc0fe137d17b135aaa666279a09
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  VVAdapter: 3d43c35d832e0ade8876c4493f9569687e4d8401
+  VVFrame: 1fbe1cf5e8503f18fcfbaba5662150c68e3aede9
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 61de0adc5bc0d6e4e3d5d3903bf3c6e637c36f5a
+PODFILE CHECKSUM: 39eb08511d1ce75ae17bb89673fccaba43e2979a
 
 COCOAPODS: 1.11.2
