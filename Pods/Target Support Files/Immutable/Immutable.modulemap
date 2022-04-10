@@ -1,6 +1,0 @@
-framework module Immutable {
-  umbrella header "Immutable-umbrella.h"
-
-  export *
-  module * { export * }
-}

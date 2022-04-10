@@ -28,6 +28,7 @@ public extension Bundle {
     static var appBuildVersion: String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
     }
+    
 }
 
 public extension Bundle {

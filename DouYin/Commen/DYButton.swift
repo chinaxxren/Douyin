@@ -8,17 +8,15 @@
 
 import Foundation
 import UIKit
-import Kingfisher
+
 
 class DYButton : UIButton {
     
     func setImageNormalURL(_ urlString: String) {
         let url = URL(string:urlString)
-        self.kf.setImage(with: url,for: .normal)
     }
     
     func setImageHighlightedURL(_ urlString: String) {
         let url = URL(string:urlString)
-        self.kf.setImage(with: url,for: .highlighted)
     }
 }

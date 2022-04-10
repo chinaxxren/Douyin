@@ -8,11 +8,9 @@
 
 
 import UIKit
-import Kingfisher
 
 class DYImageView: UIImageView {
     func setImageURL(_ urlString: String) {
         let url = URL(string:urlString)
-        self.kf.setImage(with: url)
     }
 }

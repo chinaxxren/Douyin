@@ -14,11 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let path = Bundle.main.path(forResource: "AllModule", ofType: "plist") ?? ""
+        ModuleManager.shared.registerModule(path)
+        ModuleManager.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = TabBarViewController()
         ZPlayerManager.configAudioSession()
         window.makeKeyAndVisible()
         self.window = window
+        
+        log.info("AppDelegate Print")
         return true
     }
 

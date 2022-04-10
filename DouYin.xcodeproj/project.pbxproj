@@ -12,9 +12,11 @@
 		8274322A277471DD00354AC0 /* DYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82743229277471DD00354AC0 /* DYLabel.swift */; };
 		8274322D2776F58300354AC0 /* DYTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274322C2776F58200354AC0 /* DYTableView.swift */; };
 		8274322F2776F5EE00354AC0 /* DYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274322E2776F5EE00354AC0 /* DYTableViewCell.swift */; };
-		82B6CBE82791537D00CE5FFC /* Modules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B6CBE72791537D00CE5FFC /* Modules.plist */; };
+		82B6CBE82791537D00CE5FFC /* AllModule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82B6CBE72791537D00CE5FFC /* AllModule.plist */; };
 		82B6CBEB2791542B00CE5FFC /* ModuleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CBE92791542A00CE5FFC /* ModuleObject.swift */; };
 		82B6CBEC2791542B00CE5FFC /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CBEA2791542B00CE5FFC /* ModuleManager.swift */; };
+		82B6CBF627917C1300CE5FFC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CBF527917C1300CE5FFC /* Environment.swift */; };
+		82B6CBFA27917DC200CE5FFC /* DebugModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CBF927917DC200CE5FFC /* DebugModule.swift */; };
 		8302C4A622A2C1900033C8E7 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302C4A522A2C1900033C8E7 /* UserPageViewController.swift */; };
 		8302C4A922A2F1630033C8E7 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 8302C4A822A2F1630033C8E7 /* User.json */; };
 		8302C4AB22A36B670033C8E7 /* UserPageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302C4AA22A36B670033C8E7 /* UserPageHeaderView.swift */; };
@@ -101,9 +103,12 @@
 		82743229277471DD00354AC0 /* DYLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLabel.swift; sourceTree = "<group>"; };
 		8274322C2776F58200354AC0 /* DYTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTableView.swift; sourceTree = "<group>"; };
 		8274322E2776F5EE00354AC0 /* DYTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTableViewCell.swift; sourceTree = "<group>"; };
-		82B6CBE72791537D00CE5FFC /* Modules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Modules.plist; sourceTree = "<group>"; };
+		82B6CBE72791537D00CE5FFC /* AllModule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllModule.plist; sourceTree = "<group>"; };
 		82B6CBE92791542A00CE5FFC /* ModuleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleObject.swift; sourceTree = "<group>"; };
 		82B6CBEA2791542B00CE5FFC /* ModuleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
+		82B6CBF527917C1300CE5FFC /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		82B6CBF927917DC200CE5FFC /* DebugModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugModule.swift; sourceTree = "<group>"; };
+		82B6CBFB279190C500CE5FFC /* libswift_Concurrency.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswift_Concurrency.tbd; path = usr/lib/swift/libswift_Concurrency.tbd; sourceTree = SDKROOT; };
 		8302C4A522A2C1900033C8E7 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		8302C4A822A2F1630033C8E7 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		8302C4AA22A36B670033C8E7 /* UserPageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageHeaderView.swift; sourceTree = "<group>"; };
@@ -217,9 +222,17 @@
 			children = (
 				82B6CBEA2791542B00CE5FFC /* ModuleManager.swift */,
 				82B6CBE92791542A00CE5FFC /* ModuleObject.swift */,
-				82B6CBE72791537D00CE5FFC /* Modules.plist */,
+				82B6CBE72791537D00CE5FFC /* AllModule.plist */,
 			);
 			path = ModuleManager;
+			sourceTree = "<group>";
+		};
+		82B6CBF427917C0800CE5FFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				82B6CBF527917C1300CE5FFC /* Environment.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8342CB772296A9B0009685E2 = {
@@ -243,6 +256,7 @@
 		8342CB822296A9B0009685E2 /* DouYin */ = {
 			isa = PBXGroup;
 			children = (
+				82B6CBF427917C0800CE5FFC /* Utils */,
 				827432242774715000354AC0 /* Commen */,
 				830615C5229EDEDF0038E318 /* LottieResources */,
 				83859D43229CF9B200EB1FE1 /* NetWork */,
@@ -355,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				83B37A5F229BED2400FABE03 /* AppDelegate.swift */,
+				82B6CBF927917DC200CE5FFC /* DebugModule.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -467,6 +482,7 @@
 		D15CF2B6C444A3294373F1E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82B6CBFB279190C500CE5FFC /* libswift_Concurrency.tbd */,
 				F766547BAD23F967750D2390 /* Pods_DouYin.framework */,
 			);
 			name = Frameworks;
@@ -539,7 +555,7 @@
 				833C79F422A7158F0030C71B /* UserTimeline.json in Resources */,
 				8398566B22A67B8D00D704F0 /* UserVideoList.json in Resources */,
 				836F4AD122A5389500D3B6D9 /* UserMusicList.json in Resources */,
-				82B6CBE82791537D00CE5FFC /* Modules.plist in Resources */,
+				82B6CBE82791537D00CE5FFC /* AllModule.plist in Resources */,
 				8342CB8B2296A9B1009685E2 /* Assets.xcassets in Resources */,
 				83859D34229C199B00EB1FE1 /* Feed1.json in Resources */,
 				830615C6229EDEDF0038E318 /* LottieResources in Resources */,
@@ -656,12 +672,14 @@
 				8302C4B322A4CBAD0033C8E7 /* UserPageSegmentView.swift in Sources */,
 				8302C4AF22A3DF420033C8E7 /* UserFollowBtn.swift in Sources */,
 				833C79F222A6EC0A0030C71B /* MusicCellViewModel.swift in Sources */,
+				82B6CBFA27917DC200CE5FFC /* DebugModule.swift in Sources */,
 				83B37A63229BED2400FABE03 /* VideoFeedViewController.swift in Sources */,
 				82B6CBEC2791542B00CE5FFC /* ModuleManager.swift in Sources */,
 				83C6BBB4229AB9AF00E7D0D5 /* DateExtensions.swift in Sources */,
 				83A5F06522A7BB87002D024C /* TabBarViewController.swift in Sources */,
 				8274322F2776F5EE00354AC0 /* DYTableViewCell.swift in Sources */,
 				83C6BBAD229AB9AF00E7D0D5 /* UIColorExtensions.swift in Sources */,
+				82B6CBF627917C1300CE5FFC /* Environment.swift in Sources */,
 				833C79F622A716480030C71B /* TimeLine.swift in Sources */,
 				83C6BB9E229AB9AF00E7D0D5 /* CGRectExtensions.swift in Sources */,
 				833C79F822A716A70030C71B /* TimeLineListViewModel.swift in Sources */,
@@ -819,6 +837,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.waqu.douyin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DouYin/OCbridge/DouYin-Bridging-Header.h";
@@ -845,6 +867,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.waqu.douyin;
 				PRODUCT_NAME = "$(TARGET_NAME)";

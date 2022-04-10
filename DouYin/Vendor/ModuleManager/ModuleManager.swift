@@ -5,7 +5,7 @@
 //  Created by huluobo on 2018/3/12.
 //
 
-import Foundation
+import UIKit
 
 public protocol Module: UIApplicationDelegate {}
 
@@ -36,7 +36,7 @@ extension ModuleManager {
        ```
        - parameter path: the path of modules`s name plist
      */
-    public func registerModule(with path: String) {
+    public func registerModule(_ path: String) {
         guard let dict = NSDictionary(contentsOfFile: path) else { fatalError(" The plist file dose not exist") }
         guard let modules = dict["Modules"] as? [String] else {
             fatalError("The plist file should contain the 'Modules' key ")
@@ -161,7 +161,7 @@ protocol SomeProtocol {
 extension ModuleManager: UIApplicationDelegate {
     @discardableResult
     @available(iOS 6.0, *)
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         _modules.forEach {
             let _ = $0.application?(application, willFinishLaunchingWithOptions: launchOptions)
         }
@@ -170,7 +170,7 @@ extension ModuleManager: UIApplicationDelegate {
     
     @discardableResult
     @available(iOS 6.0, *)
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         _modules.forEach {
             let _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
         }
@@ -252,7 +252,7 @@ extension ModuleManager: UIApplicationDelegate {
     }
     
     @available(iOS 9.0, *)
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {// no equiv. notification. return NO if the application can't open for some reason
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {// no equiv. notification. return NO if the application can't open for some reason
         _modules.forEach {
             let _ = $0.application?(app, open: url, options: options)
         }

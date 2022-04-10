@@ -3,21 +3,20 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'DouYin' do
-  use_frameworks!
-
+   
   # Architecture
   pod 'ReactorKit'
-
+  pod 'URLNavigator'
+  
   # Network
+  pod 'Alamofire','5.4.4'
   pod 'ReachabilitySwift'
   pod 'Moya/RxSwift'
+  pod 'Result'
   
   # Rx
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxOptional'
-  pod 'RxKeyboard'
-  pod 'RxGesture'
   #pod 'SectionReactor'
   pod 'RxIGListKit','2.0.2'
   pod 'RxAnimated'
@@ -28,9 +27,10 @@ target 'DouYin' do
   pod 'VVAdapter'
   pod 'lottie-ios'
   pod 'Nuke'
-  pod 'Kingfisher'
+ # pod 'Kingfisher'
 
   # Logging
+  pod 'SwiftyBeaver'
   
   # Misc.
   pod 'Then'
@@ -38,7 +38,6 @@ target 'DouYin' do
   pod 'SwiftyColor'
   pod 'SwiftyImage'
   pod 'KeychainAccess'
-  pod 'Immutable'
 
   # SDK
 

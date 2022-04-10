@@ -159,7 +159,7 @@ public extension UIApplication {
 
     private func changeNetworkActivity(num: Int) {
         let lock = DispatchSemaphore(value: 1)
-        DispatchQueue.main.safeAsync {
+        DispatchQueue.main.mainAsync {
             lock.wait()
             var count = num
             let oldInfo = self.networkActivityInfo

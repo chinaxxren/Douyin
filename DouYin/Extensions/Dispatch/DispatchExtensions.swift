@@ -23,7 +23,7 @@ struct Lock {
 extension DispatchQueue {
     /// 主线程安全的异步派发
     /// https://github.com/onevcat/Kingfisher/blob/master/Sources/Utility/CallbackQueue.swift
-    func safeAsync(_ block: @escaping () -> ()) {
+    func mainAsync(_ block: @escaping () -> ()) {
         if self === DispatchQueue.main && Thread.isMainThread {
             block()
         } else {

@@ -9,7 +9,7 @@
 import Foundation
 import Moya
 
-let DouyinApiProvider = MoyaProvider<DouyinApiManager>(stubClosure: MoyaProvider.delayedStub(2), plugins: [NetworkLoggerPlugin(verbose: true)])
+let DouyinApiProvider = MoyaProvider<DouyinApiManager>(stubClosure: MoyaProvider.delayedStub(2), plugins: [NetworkLoggerPlugin()])
 
 enum DouyinApiManager {
     case feed(page: Int)
